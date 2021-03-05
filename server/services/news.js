@@ -114,6 +114,7 @@ const findAndUpdate = (id, { Headlines, Description }) => {
     };
 
     watcher.close();
+    watcher = null;
     format.writeToPath(DATASET, data, { ...config.csv.options, transform })
       .on('error', (err) => reject(err))
       .on('finish', () => {

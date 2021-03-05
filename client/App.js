@@ -2,21 +2,23 @@ import React from 'react';
 import { useRoutes, useRedirect } from 'hookrouter';
 import loadable from '@loadable/component'
 import Axios from 'axios';
-import { CasesProvider } from './CasesContext';
-import { AppProvider } from './AppContext';
+import { NewsProvider } from './NewsContext';
+
+import Contents from './components/Contents';
+import Header from './components/Header';
+
+import './App.css';
 
 const App = () => {
 
-  const Header = loadable(() => import(/* webpackChunkName: "components" */ './components/Header'));  
-  const Contents = loadable(() => import(/* webpackChunkName: "components" */ './components/Contents'));  
-  const CasesPage = loadable(() => import(/* webpackChunkName: "pages" */ './pages/CasesPage'));  
+  const NewsPage = loadable(() => import(/* webpackChunkName: "pages" */ './pages/NewsPage'));  
   const NoPage = loadable(() => import(/* webpackChunkName: "pages" */ './pages/NoPage'));
 
   const routes = {
-    "/cases": () => <CasesPage />,
+    "/news": () => <NewsPage />,
   };
 
-  useRedirect('/', '/cases');
+  useRedirect('/', '/news');
   const RouteContainer = () => {
     return useRoutes(routes) || <NoPage />;
   };
@@ -28,14 +30,14 @@ const App = () => {
   }
 
   return (
-    <AppProvider>
+    <>
       <Header/>
-      <CasesProvider>
+      <NewsProvider>
         <Contents>
           <RouteContainer />
         </Contents>
-      </CasesProvider>
-    </AppProvider>
+      </NewsProvider>
+    </>
   )
 }
 
