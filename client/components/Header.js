@@ -13,7 +13,7 @@ const StyledNavbar = styled(Navbar)`
 
 const Header = () => (
   <StyledNavbar bg="white" sticky="top">
-    <Navbar.Brand href="/news" className="text-secondary">LCS</Navbar.Brand>
+    <Navbar.Brand href="/news" className="text-secondary">LaCasaSoftware</Navbar.Brand>
     <Nav className="ml-auto">
     <a href="https://github.com/jaroslavpsenicka/la-casa-software" target="_new" className="mt-1">
       <Image src={photo} roundedCircle/>

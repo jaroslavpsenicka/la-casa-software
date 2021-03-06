@@ -36,7 +36,7 @@ const NewsProvider = ({children}) => {
   }, [sort]);
 
   return (
-    <NewsContext.Provider value={{news, setSort, loadNextPage, saveRecord}}>{children}</NewsContext.Provider>
+    <NewsContext.Provider value={{news, sort, setSort, loadNextPage, saveRecord}}>{children}</NewsContext.Provider>
   );
 }
 
