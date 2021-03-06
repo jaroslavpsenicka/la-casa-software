@@ -14,7 +14,7 @@ The application
 - shows overview and detailed view of records (click the headlines)
 - allows loading more records by pressing the button "Load more"
 - allows filtering displayed news (by headlines)
-- allows editing a record by clicking the "edit" button
+- allows editing a record by clicking the "edit" button (in detail view, must be opened first)
 
 ## Project setup
 ```
@@ -23,7 +23,7 @@ cd la-casa-software
 yarn install
 yarn server
 ```
-To run the server tests, please make sure the server is running
+To run the server tests, please make sure the server (`yarn server`) is running
 ```
 yarn test-server
 ```
@@ -43,7 +43,7 @@ server
  - config.js        -- configuration (logging etc.)
  - server.js        -- server code
 ```
-All CSV data are loaded during the startup and kept in memory. To optimize the response time, the server pre-calculates a couple of indexes. This increases the startup time, but is efficient during runtime. 
+All CSV data are loaded during the startup and kept in memory. To optimize the response time, the server pre-calculates a couple of indexes. This increases the startup time, but is efficient during runtime. The server uses an original (unmodified) dataset.csv stored in /data/dataset.csv
 
 The server implements simple bubble sort algorithm as requested, see [~/server/services/functions.js](server/services/functions.js).
 
@@ -118,4 +118,12 @@ This reduces the response time to approx 200ms in exchange for potential risk of
 ### Client side
 For client performance report, see [the Lighthouse report](doc/la-casa-software.herokuapp.com-20210306T184823).
 
+## Potential improvements
+### Server side
+* better data storage :)
+* extend the service to allow querying the whole dataset (separate endpoint probably)
+
+### Client side
+* allow querying the whole dataset (ideally by just pressing Enter in the filter field)
+* problem redrawing the SearchField on every kepypress, workaround using `autoFocus`
 
