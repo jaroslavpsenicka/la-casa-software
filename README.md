@@ -53,6 +53,8 @@ The filesystem watch is implemented using simple `fs.watch` method. To avoid iss
 
 The server exposes an API, which is [documented here](https://la-casa-software.herokuapp.com/api-docs).
 
+The server consumes approx 667MB RAM when fully loaded and indexed.
+
 ### Client side
 The client is standard React/Bootstrap application, the code is organized as follows:
 ```
