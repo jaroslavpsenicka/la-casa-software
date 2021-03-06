@@ -30,6 +30,9 @@ const options = {
     }, { 
       test: /\.(png|jpg)$/, 
       loader: 'url-loader?limit=8192' 
+    }, {
+      test: /\.(ttf|eot|svg|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      use: ['file-loader']
     }]
   },
   plugins: [
