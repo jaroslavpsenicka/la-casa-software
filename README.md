@@ -116,7 +116,7 @@ format.writeToPath(DATASET, data, { ...config.csv.options, transform })
 This reduces the response time to approx 200ms in exchange for potential risk of incoming request to not yet completed index.
 
 ### Client side
-For client performance report, see [the Lighthouse report](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jaroslavpsenicka/la-casa-software/master/doc/la-casa-software.herokuapp.com-20210306T184823.html.
+For client performance report, see [the Lighthouse report](https://htmlpreview.github.io/?https://raw.githubusercontent.com/jaroslavpsenicka/la-casa-software/master/doc/la-casa-software.herokuapp.com-20210306T184823.html).
 
 ## Potential improvements
 ### Server side
