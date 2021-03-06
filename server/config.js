@@ -40,7 +40,7 @@ const config = {
   },
   swagger: {
     basedir: path.resolve(),
-    files: ["./routes/news.js"],
+    files: ["./server/routes/news.js"],
     swaggerDefinition: {
       info: {
         title: "LaCasa API",

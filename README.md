@@ -51,6 +51,8 @@ The server uses @fast-csv to handle CSV data, this pretty library allows reading
 
 The filesystem watch is implemented using simple `fs.watch` method. To avoid issues during update, the watecher is closed and recreated when the write is complete. See the `findAndUpdate` method in [~/server/services/news.js](server/services/news.js).
 
+The server exposes an API, which is [documented here](https://la-casa-software.herokuapp.com/api-docs).
+
 ### Client side
 The client is standard React/Bootstrap application, the code is organized as follows:
 ```
