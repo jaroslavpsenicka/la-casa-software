@@ -29,19 +29,17 @@ const NewsChart = ({ data }) => {
   })
   
   return (
-    <Container>
-      <Row>
-          <div className="w-100 h-100px mt-4">
-            <ResponsiveContainer>
-              <BarChart width={500} height={100} data={aggData}>
-                <Bar dataKey="count" fill="gray" />
-                <XAxis dataKey="label" />
-                <Tooltip />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-      </Row>
-    </Container>  
+    <Row>
+      <div className="w-100 h-100px mt-4">
+        <ResponsiveContainer>
+          <BarChart width={500} height={100} data={aggData}>
+            <Bar dataKey="count" fill="gray" />
+            <XAxis dataKey="label" />
+            <Tooltip />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </Row>
   )
 }
 

@@ -13,6 +13,9 @@ import Updating from '../components/Updating';
 import LoadingError from '../components/LoadingError';
 import RecordDialog from '../components/RecordDialog';
 import NewsChart from '../components/NewsChart'
+import Footer from '../components/Footer'
+import NoNews from '../components/NoNews'
+import BadFilter from '../components/BadFilter'
 
 const SearchField = ({ value, setValue }) => (
   <FormControl placeholder="type to filter,  &#9166;  to search" aria-label="search" className="col-sm-6"
@@ -21,7 +24,7 @@ const SearchField = ({ value, setValue }) => (
 
 const NewsPage = () => {
 
-  const { news, sort, setSort, loadNextPage, saveRecord } = useContext(NewsContext);
+  const { news, sort, setSort, saveRecord } = useContext(NewsContext);
   const [ showEditialog, setShowEditDialog ] = useState(false);
   const [ toggled, setToggled ] = useState({});
   const [ updating, setUpdating ] = useState({});
@@ -41,10 +44,6 @@ const NewsPage = () => {
       .finally(() => setUpdating(prev => { return {...prev, [record.Id]: false }}))
   }
 
-  const NoNews = () => (
-    <div className="mt-5 text-center text-secondary">There are no news, is it good or bad these days?</div>
-  )
-
   const SearchAndOrdering = () => (
     <div className="mt-5 mb-5 offset-sm-2">
       <InputGroup size="md" className="mb-3">
@@ -57,17 +56,10 @@ const NewsPage = () => {
     </div>
   )
 
-  const News = ({ data }) => (
-    <Container>
-      { data.map(r => updating[r.Id] ? <Updating key={r.Id} /> : <RecordRow record={r} key={r.Id} />) }
-      <Row className="mt-3">
-        <div className="col-sm-12 pr-0">
-          <Button className="btn-default float-right" onClick={() => loadNextPage()}>Next Page</Button>
-        </div>
-      </Row>
-    </Container>
-  )
-  
+  const News = ({ data }) => {
+    return data.map(r => updating[r.Id] ? <Updating key={r.Id} /> : <RecordRow record={r} key={r.Id} />) 
+  }
+
   const RecordRow = ({ record }) => {
     return (
       <Row className="p-2 pl-3 mb-1 bg-white text-secondary">
@@ -95,14 +87,16 @@ const NewsPage = () => {
   )
 
   return (
-    <>
-      { news.data && news.data.length > 0 && <NewsChart data={filteredNews()} /> }
+    <Container>
+      { filteredNews().length > 0 && <NewsChart data={filteredNews()} /> }
       <SearchAndOrdering />
       { news.data && news.data.length > 0 && <News data={filteredNews()} /> }
       { news.data && news.data.length == 0 && <NoNews /> }
+      { filteredNews().length == 0 && <BadFilter /> }
       { news.loading && <Loading /> } 
       { news.error && <LoadingError error = { news.error }/> }    
-    </>  
+      { filteredNews().length > 0 && <Footer totalRecords={news.data ? news.data.length : 0} /> }
+    </Container>  
   )
 };
 
