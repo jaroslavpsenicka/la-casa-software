@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import path from 'path';
 import swagger from 'express-swagger-generator';
 import log4js from 'log4js';
+import compression from 'compression';
 
 import config from './config.js';
 import newsRoutes from './routes/news.js';
@@ -12,6 +13,7 @@ const app = express();
 
 log4js.configure(config.log4js);
 app.use(log4js.connectLogger(log4js.getLogger(), config.express));
+app.use(compression())
 app.use(cors());
 app.use(bodyParser.json()); 
 app.use(express.static(path.join(path.resolve(), '/dist')));
