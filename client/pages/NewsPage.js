@@ -1,4 +1,4 @@
-import React, { useContext, useState, useCallback } from 'react';
+import React, { useContext, useState, useMemo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { NewsContext } from '../NewsContext';
@@ -16,11 +16,7 @@ import NewsChart from '../components/NewsChart'
 import Footer from '../components/Footer'
 import NoNews from '../components/NoNews'
 import BadFilter from '../components/BadFilter'
-
-const SearchField = ({ value, setValue }) => (
-  <FormControl placeholder="type to filter,  &#9166;  to search" aria-label="search" className="col-sm-6"
-    autoFocus value={value} onChange={(event) => setValue(event.target.value)}/>
-)
+import SearchField from '../components/SearchField'
 
 const NewsPage = () => {
 

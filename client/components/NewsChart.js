@@ -33,7 +33,7 @@ const NewsChart = ({ data }) => {
       <div className="w-100 h-100px mt-4">
         <ResponsiveContainer>
           <BarChart width={500} height={100} data={aggData}>
-            <Bar dataKey="count" fill="gray" />
+            <Bar dataKey="count" fill="#18BC9C" />
             <XAxis dataKey="label" />
             <Tooltip />
           </BarChart>

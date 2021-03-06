@@ -12,7 +12,7 @@ const Footer = ({ totalRecords }) => {
     <Row className="mt-3">
       <div className="col-sm-6 pl-0 text-secondary">Total {totalRecords} records.</div>
       <div className="col-sm-6 pr-0">
-        <Button className="btn-default float-right" onClick={() => loadNextPage()}>Next Page</Button>
+        <Button className="btn-default float-right" onClick={() => loadNextPage()}>Load more</Button>
       </div>
     </Row>
   )
