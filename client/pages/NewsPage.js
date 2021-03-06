@@ -29,7 +29,7 @@ const NewsPage = () => {
   const filteredNews = () => {
     return news.data ? news.data
       .filter(r => r && r.Id)
-      .filter(r => filter === '' || r.Headlines.includes(filter)) : null;
+      .filter(r => !filter || filter === '' || r.Headlines.includes(filter)) : null;
   }
 
   const saveRecordAndCloseDialog = (record) => {
@@ -59,7 +59,7 @@ const NewsPage = () => {
   const RecordRow = ({ record }) => {
     return (
       <Row className="p-2 pl-3 mb-1 bg-white text-secondary">
-        <div className="mb-0 text-primary col-sm-9 cursor-pointer" 
+        <div id={`row-${record.Id}-toggle`} className="mb-0 text-primary col-sm-9 cursor-pointer" 
           onClick={() => setToggled({ ...toggled, [record.Id]: !toggled[record.Id]})}>
           <FontAwesomeIcon icon={toggled[record.Id] ? faAngleDown : faAngleRight} />
           <span className="ml-3">{record.Headlines}</span>
@@ -72,7 +72,8 @@ const NewsPage = () => {
 
   const RecordDetail = ({ record }) => (
     <div className="text-secondary mt-2 col-sm-12">
-      <Button className="float-right ml-2 mb-2" onClick={() => setShowEditDialog(true)}>Edit Record</Button>
+      <Button className="float-right ml-2 mb-2" 
+        onClick={() => setShowEditDialog(true)}>Edit Record</Button>
       <span>{record.Description}</span>
       <RecordDialog 
         show={showEditialog} 

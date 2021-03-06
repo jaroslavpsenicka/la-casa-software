@@ -1,0 +1,1131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsPage click to open 1`] = `
+<NewsPage>
+  <Container
+    fluid={false}
+  >
+    <div
+      className="container"
+    >
+      <NewsChart
+        data={
+          Array [
+            Object {
+              "Description": "World",
+              "Headlines": "Hello",
+              "Id": 1,
+              "Time": "2021-03-05T16:02:00.000Z",
+            },
+          ]
+        }
+      >
+        <Row
+          noGutters={false}
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="w-100 h-100px mt-4"
+            >
+              <ResponsiveContainer
+                debounce={0}
+                height="100%"
+                width="100%"
+              >
+                <ResizeDetector
+                  handleHeight={true}
+                  handleWidth={true}
+                  onResize={[Function]}
+                  targetRef={
+                    Object {
+                      "current": <div
+                        class="recharts-responsive-container"
+                        style="width: 100%; height: 100%;"
+                      />,
+                    }
+                  }
+                >
+                  <div
+                    className="recharts-responsive-container"
+                    style={
+                      Object {
+                        "height": "100%",
+                        "maxHeight": undefined,
+                        "minHeight": undefined,
+                        "minWidth": undefined,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <BarChart
+                      barCategoryGap="10%"
+                      barGap={4}
+                      data={
+                        Array [
+                          40,
+                          Object {
+                            "count": 0,
+                            "key": "11/2017",
+                            "label": "December 2017",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "0/2018",
+                            "label": "January 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "1/2018",
+                            "label": "February 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "2/2018",
+                            "label": "March 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "3/2018",
+                            "label": "April 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "4/2018",
+                            "label": "May 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "5/2018",
+                            "label": "June 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "6/2018",
+                            "label": "July 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "7/2018",
+                            "label": "August 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "8/2018",
+                            "label": "September 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "9/2018",
+                            "label": "October 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "10/2018",
+                            "label": "November 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "11/2018",
+                            "label": "December 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "0/2019",
+                            "label": "January 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "1/2019",
+                            "label": "February 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "2/2019",
+                            "label": "March 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "3/2019",
+                            "label": "April 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "4/2019",
+                            "label": "May 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "5/2019",
+                            "label": "June 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "6/2019",
+                            "label": "July 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "7/2019",
+                            "label": "August 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "8/2019",
+                            "label": "September 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "9/2019",
+                            "label": "October 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "10/2019",
+                            "label": "November 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "11/2019",
+                            "label": "December 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "0/2020",
+                            "label": "January 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "1/2020",
+                            "label": "February 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "2/2020",
+                            "label": "March 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "3/2020",
+                            "label": "April 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "4/2020",
+                            "label": "May 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "5/2020",
+                            "label": "June 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "6/2020",
+                            "label": "July 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "7/2020",
+                            "label": "August 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "8/2020",
+                            "label": "September 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "9/2020",
+                            "label": "October 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "10/2020",
+                            "label": "November 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "11/2020",
+                            "label": "December 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "0/2021",
+                            "label": "January 2021",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "1/2021",
+                            "label": "February 2021",
+                          },
+                          Object {
+                            "count": 1,
+                            "key": "2/2021",
+                            "label": "March 2021",
+                          },
+                        ]
+                      }
+                      height={0}
+                      layout="horizontal"
+                      margin={
+                        Object {
+                          "bottom": 5,
+                          "left": 5,
+                          "right": 5,
+                          "top": 5,
+                        }
+                      }
+                      reverseStackOrder={false}
+                      stackOffset="none"
+                      syncMethod="index"
+                      width={0}
+                    />
+                  </div>
+                </ResizeDetector>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </Row>
+      </NewsChart>
+      <SearchAndOrdering>
+        <div
+          className="mt-5 mb-5 offset-sm-2"
+        >
+          <InputGroup
+            className="mb-3"
+            size="md"
+          >
+            <div
+              className="mb-3 input-group input-group-md"
+            >
+              <SearchField
+                key="search"
+                setValue={[Function]}
+                value=""
+              >
+                <FormControl
+                  aria-label="search"
+                  autoFocus={true}
+                  className="col-sm-6"
+                  onChange={[Function]}
+                  placeholder="type to filter"
+                  value=""
+                >
+                  <input
+                    aria-label="search"
+                    autoFocus={true}
+                    className="col-sm-6 form-control"
+                    onChange={[Function]}
+                    placeholder="type to filter"
+                    value=""
+                  />
+                </FormControl>
+              </SearchField>
+              <FormControl
+                as="select"
+                className="col-sm-4"
+                onChange={[Function]}
+              >
+                <select
+                  className="col-sm-4 form-control"
+                  onChange={[Function]}
+                >
+                  <option
+                    value="Time"
+                  >
+                    sort by time
+                  </option>
+                  <option
+                    value="Headlines"
+                  >
+                    sort by headlines
+                  </option>
+                </select>
+              </FormControl>
+            </div>
+          </InputGroup>
+        </div>
+      </SearchAndOrdering>
+      <News
+        data={
+          Array [
+            Object {
+              "Description": "World",
+              "Headlines": "Hello",
+              "Id": 1,
+              "Time": "2021-03-05T16:02:00.000Z",
+            },
+          ]
+        }
+      >
+        <RecordRow
+          key="1"
+          record={
+            Object {
+              "Description": "World",
+              "Headlines": "Hello",
+              "Id": 1,
+              "Time": "2021-03-05T16:02:00.000Z",
+            }
+          }
+        >
+          <Row
+            className="p-2 pl-3 mb-1 bg-white text-secondary"
+            noGutters={false}
+          >
+            <div
+              className="p-2 pl-3 mb-1 bg-white text-secondary row"
+            >
+              <div
+                className="mb-0 text-primary col-sm-9 cursor-pointer"
+                id="row-1-toggle"
+                onClick={[Function]}
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className=""
+                  fixedWidth={false}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        320,
+                        512,
+                        Array [],
+                        "f107",
+                        "M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z",
+                      ],
+                      "iconName": "angle-down",
+                      "prefix": "fas",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-angle-down fa-w-10 "
+                    data-icon="angle-down"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 320 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </FontAwesomeIcon>
+                <span
+                  className="ml-3"
+                >
+                  Hello
+                </span>
+              </div>
+              <div
+                className="text-secondary col-sm-3 text-right"
+              >
+                3/5/2021, 5:02:00 PM
+              </div>
+              <RecordDetail
+                record={
+                  Object {
+                    "Description": "World",
+                    "Headlines": "Hello",
+                    "Id": 1,
+                    "Time": "2021-03-05T16:02:00.000Z",
+                  }
+                }
+              >
+                <div
+                  className="text-secondary mt-2 col-sm-12"
+                >
+                  <Button
+                    active={false}
+                    className="float-right ml-2 mb-2"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                    variant="primary"
+                  >
+                    <button
+                      className="float-right ml-2 mb-2 btn btn-primary"
+                      disabled={false}
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      Edit Record
+                    </button>
+                  </Button>
+                  <span>
+                    World
+                  </span>
+                  <RecordDialog
+                    onCancel={[Function]}
+                    onSubmit={[Function]}
+                    record={
+                      Object {
+                        "Description": "World",
+                        "Headlines": "Hello",
+                        "Id": 1,
+                        "Time": "2021-03-05T16:02:00.000Z",
+                      }
+                    }
+                    show={false}
+                  >
+                    <Bootstrap(Modal)
+                      onHide={[Function]}
+                      onShow={[Function]}
+                      show={false}
+                    >
+                      <Modal
+                        animation={true}
+                        autoFocus={true}
+                        backdrop={true}
+                        bsPrefix="modal"
+                        dialogAs={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "displayName": "ModalDialog",
+                            "render": [Function],
+                          }
+                        }
+                        enforceFocus={true}
+                        keyboard={true}
+                        onHide={[Function]}
+                        onShow={[Function]}
+                        restoreFocus={true}
+                        show={false}
+                      >
+                        <ForwardRef
+                          autoFocus={true}
+                          backdrop={true}
+                          backdropTransition={[Function]}
+                          className="modal"
+                          containerClassName="modal-open"
+                          enforceFocus={true}
+                          keyboard={true}
+                          manager={
+                            BootstrapModalManager {
+                              "adjustAndStore": [Function],
+                              "containers": Array [],
+                              "data": Array [],
+                              "handleContainerOverflow": true,
+                              "hideSiblingNodes": true,
+                              "modals": Array [],
+                              "restore": [Function],
+                              "scrollbarSize": 0,
+                            }
+                          }
+                          onClick={[Function]}
+                          onEnter={[Function]}
+                          onEntering={[Function]}
+                          onExited={[Function]}
+                          onHide={[Function]}
+                          onMouseUp={[Function]}
+                          onShow={[Function]}
+                          renderBackdrop={[Function]}
+                          restoreFocus={true}
+                          show={false}
+                          style={Object {}}
+                          transition={[Function]}
+                        >
+                          <Modal
+                            autoFocus={true}
+                            backdrop={true}
+                            backdropTransition={[Function]}
+                            className="modal"
+                            container={<body />}
+                            containerClassName="modal-open"
+                            enforceFocus={true}
+                            keyboard={true}
+                            manager={
+                              BootstrapModalManager {
+                                "adjustAndStore": [Function],
+                                "containers": Array [],
+                                "data": Array [],
+                                "handleContainerOverflow": true,
+                                "hideSiblingNodes": true,
+                                "modals": Array [],
+                                "restore": [Function],
+                                "scrollbarSize": 0,
+                              }
+                            }
+                            onClick={[Function]}
+                            onEnter={[Function]}
+                            onEntering={[Function]}
+                            onExited={[Function]}
+                            onHide={[Function]}
+                            onMouseUp={[Function]}
+                            onShow={[Function]}
+                            renderBackdrop={[Function]}
+                            restoreFocus={true}
+                            role="dialog"
+                            show={false}
+                            style={Object {}}
+                            transition={[Function]}
+                          />
+                        </ForwardRef>
+                      </Modal>
+                    </Bootstrap(Modal)>
+                  </RecordDialog>
+                </div>
+              </RecordDetail>
+            </div>
+          </Row>
+        </RecordRow>
+      </News>
+      <Footer
+        totalRecords={1}
+      >
+        <Row
+          className="mt-3"
+          noGutters={false}
+        >
+          <div
+            className="mt-3 row"
+          >
+            <div
+              className="col-sm-6 pl-0 text-secondary"
+            >
+              Total 
+              1
+               records.
+            </div>
+            <div
+              className="col-sm-6 pr-0"
+            >
+              <Button
+                active={false}
+                className="btn-default float-right"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+                variant="primary"
+              >
+                <button
+                  className="btn-default float-right btn btn-primary"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Load more
+                </button>
+              </Button>
+            </div>
+          </div>
+        </Row>
+      </Footer>
+    </div>
+  </Container>
+</NewsPage>
+`;
+
+exports[`NewsPage render plain 1`] = `
+<NewsPage>
+  <Container
+    fluid={false}
+  >
+    <div
+      className="container"
+    >
+      <NewsChart
+        data={
+          Array [
+            Object {
+              "Description": "World",
+              "Headlines": "Hello",
+              "Id": 1,
+              "Time": "2021-03-05T16:02:00.000Z",
+            },
+          ]
+        }
+      >
+        <Row
+          noGutters={false}
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="w-100 h-100px mt-4"
+            >
+              <ResponsiveContainer
+                debounce={0}
+                height="100%"
+                width="100%"
+              >
+                <ResizeDetector
+                  handleHeight={true}
+                  handleWidth={true}
+                  onResize={[Function]}
+                  targetRef={
+                    Object {
+                      "current": <div
+                        class="recharts-responsive-container"
+                        style="width: 100%; height: 100%;"
+                      />,
+                    }
+                  }
+                >
+                  <div
+                    className="recharts-responsive-container"
+                    style={
+                      Object {
+                        "height": "100%",
+                        "maxHeight": undefined,
+                        "minHeight": undefined,
+                        "minWidth": undefined,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <BarChart
+                      barCategoryGap="10%"
+                      barGap={4}
+                      data={
+                        Array [
+                          40,
+                          Object {
+                            "count": 0,
+                            "key": "11/2017",
+                            "label": "December 2017",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "0/2018",
+                            "label": "January 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "1/2018",
+                            "label": "February 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "2/2018",
+                            "label": "March 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "3/2018",
+                            "label": "April 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "4/2018",
+                            "label": "May 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "5/2018",
+                            "label": "June 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "6/2018",
+                            "label": "July 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "7/2018",
+                            "label": "August 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "8/2018",
+                            "label": "September 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "9/2018",
+                            "label": "October 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "10/2018",
+                            "label": "November 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "11/2018",
+                            "label": "December 2018",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "0/2019",
+                            "label": "January 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "1/2019",
+                            "label": "February 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "2/2019",
+                            "label": "March 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "3/2019",
+                            "label": "April 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "4/2019",
+                            "label": "May 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "5/2019",
+                            "label": "June 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "6/2019",
+                            "label": "July 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "7/2019",
+                            "label": "August 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "8/2019",
+                            "label": "September 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "9/2019",
+                            "label": "October 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "10/2019",
+                            "label": "November 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "11/2019",
+                            "label": "December 2019",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "0/2020",
+                            "label": "January 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "1/2020",
+                            "label": "February 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "2/2020",
+                            "label": "March 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "3/2020",
+                            "label": "April 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "4/2020",
+                            "label": "May 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "5/2020",
+                            "label": "June 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "6/2020",
+                            "label": "July 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "7/2020",
+                            "label": "August 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "8/2020",
+                            "label": "September 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "9/2020",
+                            "label": "October 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "10/2020",
+                            "label": "November 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "11/2020",
+                            "label": "December 2020",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "0/2021",
+                            "label": "January 2021",
+                          },
+                          Object {
+                            "count": 0,
+                            "key": "1/2021",
+                            "label": "February 2021",
+                          },
+                          Object {
+                            "count": 1,
+                            "key": "2/2021",
+                            "label": "March 2021",
+                          },
+                        ]
+                      }
+                      height={0}
+                      layout="horizontal"
+                      margin={
+                        Object {
+                          "bottom": 5,
+                          "left": 5,
+                          "right": 5,
+                          "top": 5,
+                        }
+                      }
+                      reverseStackOrder={false}
+                      stackOffset="none"
+                      syncMethod="index"
+                      width={0}
+                    />
+                  </div>
+                </ResizeDetector>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </Row>
+      </NewsChart>
+      <SearchAndOrdering>
+        <div
+          className="mt-5 mb-5 offset-sm-2"
+        >
+          <InputGroup
+            className="mb-3"
+            size="md"
+          >
+            <div
+              className="mb-3 input-group input-group-md"
+            >
+              <SearchField
+                key="search"
+                setValue={[Function]}
+                value=""
+              >
+                <FormControl
+                  aria-label="search"
+                  autoFocus={true}
+                  className="col-sm-6"
+                  onChange={[Function]}
+                  placeholder="type to filter"
+                  value=""
+                >
+                  <input
+                    aria-label="search"
+                    autoFocus={true}
+                    className="col-sm-6 form-control"
+                    onChange={[Function]}
+                    placeholder="type to filter"
+                    value=""
+                  />
+                </FormControl>
+              </SearchField>
+              <FormControl
+                as="select"
+                className="col-sm-4"
+                onChange={[Function]}
+              >
+                <select
+                  className="col-sm-4 form-control"
+                  onChange={[Function]}
+                >
+                  <option
+                    value="Time"
+                  >
+                    sort by time
+                  </option>
+                  <option
+                    value="Headlines"
+                  >
+                    sort by headlines
+                  </option>
+                </select>
+              </FormControl>
+            </div>
+          </InputGroup>
+        </div>
+      </SearchAndOrdering>
+      <News
+        data={
+          Array [
+            Object {
+              "Description": "World",
+              "Headlines": "Hello",
+              "Id": 1,
+              "Time": "2021-03-05T16:02:00.000Z",
+            },
+          ]
+        }
+      >
+        <RecordRow
+          key="1"
+          record={
+            Object {
+              "Description": "World",
+              "Headlines": "Hello",
+              "Id": 1,
+              "Time": "2021-03-05T16:02:00.000Z",
+            }
+          }
+        >
+          <Row
+            className="p-2 pl-3 mb-1 bg-white text-secondary"
+            noGutters={false}
+          >
+            <div
+              className="p-2 pl-3 mb-1 bg-white text-secondary row"
+            >
+              <div
+                className="mb-0 text-primary col-sm-9 cursor-pointer"
+                id="row-1-toggle"
+                onClick={[Function]}
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className=""
+                  fixedWidth={false}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        256,
+                        512,
+                        Array [],
+                        "f105",
+                        "M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z",
+                      ],
+                      "iconName": "angle-right",
+                      "prefix": "fas",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-angle-right fa-w-8 "
+                    data-icon="angle-right"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 256 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </FontAwesomeIcon>
+                <span
+                  className="ml-3"
+                >
+                  Hello
+                </span>
+              </div>
+              <div
+                className="text-secondary col-sm-3 text-right"
+              >
+                3/5/2021, 5:02:00 PM
+              </div>
+            </div>
+          </Row>
+        </RecordRow>
+      </News>
+      <Footer
+        totalRecords={1}
+      >
+        <Row
+          className="mt-3"
+          noGutters={false}
+        >
+          <div
+            className="mt-3 row"
+          >
+            <div
+              className="col-sm-6 pl-0 text-secondary"
+            >
+              Total 
+              1
+               records.
+            </div>
+            <div
+              className="col-sm-6 pr-0"
+            >
+              <Button
+                active={false}
+                className="btn-default float-right"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+                variant="primary"
+              >
+                <button
+                  className="btn-default float-right btn btn-primary"
+                  disabled={false}
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Load more
+                </button>
+              </Button>
+            </div>
+          </div>
+        </Row>
+      </Footer>
+    </div>
+  </Container>
+</NewsPage>
+`;

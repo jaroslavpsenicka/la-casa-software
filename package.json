@@ -8,7 +8,8 @@
     "server": "nodemon server/server.js",
     "client": "cross-env NODE_ENV=development REACT_APP_VERSION=$npm_package_version REACT_APP_SERVICE_URL=http://localhost:8080 webpack-dev-server  --config webpack.config.cjs --hot --history-api-fallback",
     "build": "cross-env NODE_ENV=production REACT_APP_VERSION=$npm_package_version webpack --config webpack.config.cjs",
-    "test": "cd server && jest",
+    "test-server": "jest server/tests",
+    "test-client": "jest client/tests",
     "start": "node server/server.js"
   },
   "author": "Jaroslav Psenicka",
@@ -51,6 +52,9 @@
     "cors": "^2.8.5",
     "cross-env": "^6.0.3",
     "css-loader": "^3.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.1",
     "express": "^4.17.1",
     "express-swagger-generator": "^1.1.15",
     "file-loader": "^5.0.2",
@@ -92,5 +96,14 @@
       "react-hot-loader/babel",
       "@babel/plugin-transform-runtime"
     ]
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|ico|jpeg|png|gif|eot|svg)$": "<rootDir>/client/tests/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/client/tests/__mocks__/fileMock.js"
+    }
   }
 }

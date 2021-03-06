@@ -1,13 +1,5 @@
 import moment from 'moment-timezone';
 
-const needsSwap = (first, second) => {
-  if (typeof(first) === 'string') {
-    return first.localeCompare(second) > 0;
-  } else if (first instanceof moment) {
-    return second.isAfter(first);
-  } else throw 'unknown type ' + first
-}
-
 export const sort = (data, key) => {
   var swapped = false;
   do {
@@ -24,5 +16,13 @@ export const sort = (data, key) => {
   } while (swapped);
 
   return data;
+}
+
+const needsSwap = (first, second) => {
+  if (typeof(first) === 'string') {
+    return first.localeCompare(second) > 0;
+  } else if (first instanceof moment) {
+    return second.isAfter(first);
+  } else throw 'unknown type ' + first
 }
 
