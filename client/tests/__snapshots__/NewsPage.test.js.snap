@@ -461,7 +461,6 @@ exports[`NewsPage click to open 1`] = `
                     className="float-right ml-2 mb-2"
                     disabled={false}
                     onClick={[Function]}
-                    type="button"
                     variant="primary"
                   >
                     <button
@@ -489,101 +488,55 @@ exports[`NewsPage click to open 1`] = `
                     }
                     show={false}
                   >
-                    <Bootstrap(Modal)
+                    <Modal
+                      animation={true}
+                      autoFocus={true}
+                      backdrop={true}
+                      dialogAs={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "displayName": "ModalDialog",
+                          "render": [Function],
+                        }
+                      }
+                      enforceFocus={true}
+                      keyboard={true}
                       onHide={[Function]}
                       onShow={[Function]}
+                      restoreFocus={true}
                       show={false}
                     >
                       <Modal
-                        animation={true}
                         autoFocus={true}
                         backdrop={true}
-                        bsPrefix="modal"
-                        dialogAs={
-                          Object {
-                            "$$typeof": Symbol(react.forward_ref),
-                            "displayName": "ModalDialog",
-                            "render": [Function],
-                          }
-                        }
+                        backdropTransition={[Function]}
+                        containerClassName="modal-open"
                         enforceFocus={true}
                         keyboard={true}
+                        manager={
+                          BootstrapModalManager {
+                            "containers": Array [],
+                            "data": Array [],
+                            "handleContainerOverflow": true,
+                            "hideSiblingNodes": true,
+                            "modals": Array [],
+                            "scrollbarSize": 0,
+                          }
+                        }
+                        onEnter={[Function]}
+                        onEntering={[Function]}
+                        onEscapeKeyDown={[Function]}
+                        onExit={[Function]}
+                        onExited={[Function]}
                         onHide={[Function]}
                         onShow={[Function]}
+                        renderBackdrop={[Function]}
+                        renderDialog={[Function]}
                         restoreFocus={true}
                         show={false}
-                      >
-                        <ForwardRef
-                          autoFocus={true}
-                          backdrop={true}
-                          backdropTransition={[Function]}
-                          className="modal"
-                          containerClassName="modal-open"
-                          enforceFocus={true}
-                          keyboard={true}
-                          manager={
-                            BootstrapModalManager {
-                              "adjustAndStore": [Function],
-                              "containers": Array [],
-                              "data": Array [],
-                              "handleContainerOverflow": true,
-                              "hideSiblingNodes": true,
-                              "modals": Array [],
-                              "restore": [Function],
-                              "scrollbarSize": 0,
-                            }
-                          }
-                          onClick={[Function]}
-                          onEnter={[Function]}
-                          onEntering={[Function]}
-                          onExited={[Function]}
-                          onHide={[Function]}
-                          onMouseUp={[Function]}
-                          onShow={[Function]}
-                          renderBackdrop={[Function]}
-                          restoreFocus={true}
-                          show={false}
-                          style={Object {}}
-                          transition={[Function]}
-                        >
-                          <Modal
-                            autoFocus={true}
-                            backdrop={true}
-                            backdropTransition={[Function]}
-                            className="modal"
-                            container={<body />}
-                            containerClassName="modal-open"
-                            enforceFocus={true}
-                            keyboard={true}
-                            manager={
-                              BootstrapModalManager {
-                                "adjustAndStore": [Function],
-                                "containers": Array [],
-                                "data": Array [],
-                                "handleContainerOverflow": true,
-                                "hideSiblingNodes": true,
-                                "modals": Array [],
-                                "restore": [Function],
-                                "scrollbarSize": 0,
-                              }
-                            }
-                            onClick={[Function]}
-                            onEnter={[Function]}
-                            onEntering={[Function]}
-                            onExited={[Function]}
-                            onHide={[Function]}
-                            onMouseUp={[Function]}
-                            onShow={[Function]}
-                            renderBackdrop={[Function]}
-                            restoreFocus={true}
-                            role="dialog"
-                            show={false}
-                            style={Object {}}
-                            transition={[Function]}
-                          />
-                        </ForwardRef>
-                      </Modal>
-                    </Bootstrap(Modal)>
+                        transition={[Function]}
+                      />
+                    </Modal>
                   </RecordDialog>
                 </div>
               </RecordDetail>
@@ -616,7 +569,6 @@ exports[`NewsPage click to open 1`] = `
                 className="btn-default float-right"
                 disabled={false}
                 onClick={[Function]}
-                type="button"
                 variant="primary"
               >
                 <button
@@ -1109,7 +1061,6 @@ exports[`NewsPage render plain 1`] = `
                 className="btn-default float-right"
                 disabled={false}
                 onClick={[Function]}
-                type="button"
                 variant="primary"
               >
                 <button

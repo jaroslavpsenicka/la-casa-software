@@ -29,7 +29,7 @@ const NewsPage = () => {
   const filteredNews = () => {
     return news.data ? news.data
       .filter(r => r && r.Id)
-      .filter(r => !filter || filter === '' || r.Headlines.includes(filter)) : null;
+      .filter(r => !filter || filter === '' || r.Headlines.includes(filter)) : [];
   }
 
   const saveRecordAndCloseDialog = (record) => {
